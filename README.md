@@ -1,21 +1,13 @@
 # CSPractice
 
-**TODO: Add description**
+Data structure and algorithm practice with Elixir
 
-## Installation
+## Testing
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `cs_practice` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:cs_practice, "~> 0.1.0"}
-  ]
-end
+```bash
+mix test
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/cs_practice](https://hexdocs.pm/cs_practice).
-
+be found at <https://hexdocs.pm/cs_practice>.
