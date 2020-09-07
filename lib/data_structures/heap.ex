@@ -12,27 +12,17 @@ defmodule Heap do
   defstruct [:capacity, :size, list: []]
 
   @doc """
-  ## Examples
+  Creates heap struct with defaults
 
-      Creates heap with defaults
+
+  ## Examples
       iex> Heap.new()
       %Heap{capacity: 10, size: 0, list: []}
 
-      Creates heap with passed arguments
       iex> Heap.new(2, 3)
       %Heap{capacity: 2, size: 3, list: []}
   """
   def new(capacity \\ 10, size \\ 0) do
     %__MODULE__{capacity: capacity, size: size}
-  end
-
-  @doc """
-  ## Examples
-      iex> input = :neat
-      iex> Heap.heap(input)
-      :neat
-  """
-  def heap(input) do
-    input
   end
 end
