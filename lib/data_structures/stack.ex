@@ -1,6 +1,6 @@
 defmodule Stack do
   @moduledoc """
-  In computer science, a stack is an abstract data type that serves as a collection of elements, with two main principal operations:
+  A stack is an abstract data type that serves as a collection of elements, with two main principal operations:
 
   - push: adds an element to the collection, and
   - pop: removes the most recently added element that was not yet removed.

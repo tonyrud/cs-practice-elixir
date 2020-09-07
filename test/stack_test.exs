@@ -41,12 +41,8 @@ defmodule StackTest do
   end
 
   test "errors if capacity met" do
-    stack =
-      Stack.new()
-      |> Stack.push(1)
-      |> Stack.push(3)
-      |> Stack.push(3)
-
-    assert Stack.push(stack, 3) == {:error, "capacity reached"}
+    assert Enum.reduce(1..4, Stack.new(), fn x, acc ->
+             Stack.push(acc, x)
+           end) == {:error, "capacity reached"}
   end
 end
